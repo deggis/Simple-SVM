@@ -67,11 +67,13 @@ import AI.SVM.Common
 data ClassifierType =
                C  {cost :: Double}
               | NU {cost :: Double, nu :: Double}
+    deriving (Show)
 
 -- | Supported SVM regression machines
 data RegressorType =
                Epsilon  Double Double
-              | NU_r     Double Double
+              | NU_r    Double Double
+    deriving (Show)
 
 data SVMClassifier a = SVMClassifier SVM (Map a Double) (Map Double a)
 newtype SVMRegressor  = SVMRegressor SVM 
