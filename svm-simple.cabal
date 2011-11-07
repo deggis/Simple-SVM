@@ -45,8 +45,6 @@ cabal-version:       >= 1.8
   
 extra-source-files:
     Examples/SmokeTest.hs
-    Examples/Plot.hs
-    Examples/PlotOneClass.hs
 
 library
   other-modules:
